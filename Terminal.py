@@ -78,7 +78,7 @@ class TerminalSelector():
                 default = os.environ['SYSTEMROOT'] + '\\System32\\cmd.exe'
 
         elif sys.platform == 'darwin':
-            default = os.path.join(package_dir, 'Terminal.sh')
+            default = os.path.join(package_dir, 'iTerm_tab.sh')
             if not os.access(default, os.X_OK):
                 os.chmod(default, 0o755)
 
